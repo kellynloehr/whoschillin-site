@@ -1,12 +1,24 @@
-.example-module
+.header
   +trailer(1)
   border: 2px solid $grey-faint
-  border-radius: 8px
   padding: pxtoem(40px)
   text-align: center
 
   .breakpoint-desktop &
-    +span(6 of 12)
-
+    +span(12 of 12)
     &:nth-child(2n)
       +omega
+
+
+
+.module
+  +trailer(1)
+  border: 2px solid $grey-faint
+  padding: pxtoem(10px)
+  text-align: center
+  .breakpoint-desktop &
+    +span(6 of 12)
+    &:nth-child(2n)
+      +omega
+.module.img
+  width: $width
