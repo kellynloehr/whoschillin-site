@@ -224,27 +224,6 @@ pre {
   list-style: none;
   margin-left: 0; }
 
-  .column-wrapper {
-    font-size: 15px;
-    color: #828282;
-    margin-left: -15px; }
-
-  .column-col {
-    float: left;
-    margin-bottom: 15px;
-    padding-left: 5px; }
-
-  .column-col-1 {
-    width: -webkit-calc(50% - (30px / 2));
-    width: calc(50% - (30px / 2)); }
-
-
-  .column-col-2 {
-    width: -webkit-calc(50% - (30px / 2));
-    width: calc(50% - (30px / 2)); }
-
-
-
 .footer-col-wrapper {
   font-size: 15px;
   color: #828282;
@@ -268,8 +247,6 @@ pre {
   width: calc(45% - (30px / 2)); }
 
 @media screen and (max-width: 800px) {
-  .column-col-1,
-  .column-col-2,
   .footer-col-1,
   .footer-col-2 {
     width: -webkit-calc(50% - (30px / 2));
@@ -310,14 +287,10 @@ pre {
  * Posts
  */
 .post-header {
-  margin-bottom: 30px;
-  width:70%;
-  margin-left: 24%;
-}
+  margin-bottom: 30px; }
 
 .post-title {
-
-  font-size: 50px;
+  font-size: 42px;
   letter-spacing: -1px;
   line-height: 1; }
   @media screen and (max-width: 800px) {
