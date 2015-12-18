@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 WHOZCHILLIN
 =================
 =======
+=======
+>>>>>>> master
 Middleman Starter
 =================
 
@@ -23,4 +26,7 @@ Alternatively, you can (re)use this template like a pro by cloning it into `~/mi
 
 ### Stop yelling at me
 This is a WIP and it is put together for the way I like to do things. If you like to do things a different way you should just do that.
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
