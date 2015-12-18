@@ -13,6 +13,42 @@
 		small:	'(max-width: 736px)',
 		xsmall:	'(max-width: 480px)'
 	});
+	/*
+
+		jQuery - Progress Bars
+		===================
+
+		jQuery - Animate Multiple Progress Bars
+
+		Original code:
+		* http://workshop.rs/2012/12/animated-progress-bar-in-4-lines-of-jquery/
+		* http://jsfiddle.net/X5Dxk/
+
+		I modified this code to use one class for multiple progress bars.
+		You can use the id to set the maximum value for the progress bar.
+
+		You can enable the labels of the progress bars in the code, just comment the right line.
+
+	*/
+	function progress(percent, element) {
+		var progressBarWidth = percent * element.width() / 100;
+		// With labels:
+		element.find('div').animate({ width: progressBarWidth }, 500).html(percent + "%&nbsp;");
+
+		// Without labels:
+		//element.find('div').animate({ width: progressBarWidth }, 500);
+	}
+
+	$(document).ready(function() {
+		$('.progressBar').each(function() {
+			//alert('Hello');
+			var bar = $(this);
+			var max = $(this).attr('id');
+			max = max.substring(3);
+
+			progress(max, bar);
+		});
+	});
 
 	$(function() {
 
@@ -205,6 +241,8 @@
 						}
 					});
 
+
 	});
+
 
 })(jQuery);
