@@ -105,7 +105,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: rgba(0,0,0, 0.55)
+		color: rgba(0,0,0, 0.65)
 		font-weight: bold;
 		line-height: 1.5;
 		margin: 0 0 0.5em 0;
@@ -119,7 +119,8 @@
 	h1 {
 		font-size: 3em;
 		font-weight: 800;
-		padding: 0.3em 0em;
+		padding: 0em 0em;
+		color: rgba(0,0,0, 0.75)
 	}
 
 		h1.major {
@@ -430,7 +431,7 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			border-color: rgba(0,0,0, 0.45) !important;
+			border-color: rgba(255,255,255, 0.25) !important;
 		}
 
 			input[type="submit"]:hover:after,
@@ -458,13 +459,21 @@
 				input[type="button"]:hover:active:after,
 				button:hover:active:after,
 				.button:hover:active:after {
-					opacity: 0.1;
+					opacity: 0.4;
 				}
 
 .location-btn{
 	color: rgba(255, 255, 255, 0.9)!important;
 	border-color: rgba(255, 255, 255, 0.9)!important;
 	margin-top: 50%;
+}
+.yellow{
+		color: rgba(255, 255, 255, 0.9)!important;
+	background-color: #FCD221!important;
+	border-color: rgba(255, 255, 255, 0.9)!important;
+	text-decoration: none !important;
+	margin-top: 2%;
+
 }
 	/*
 		Hyperspace by HTML5 UP
@@ -1075,8 +1084,7 @@
 					}
 
 						ul.actions li > * {
-							width: 100%;
-							margin: 0 !important;
+
 						}
 
 							ul.actions li > *.icon:before {
@@ -1084,7 +1092,7 @@
 							}
 
 						ul.actions li .button {
-							padding: 0;
+							padding-top: 0;
 						}
 
 						ul.actions li:first-child {
@@ -1533,7 +1541,6 @@
 	}
 
 		.wrapper > .inner {
-
 			max-width: 100%;
 			margin-left:0%;
 			text-align: center;
@@ -1543,7 +1550,7 @@
 			@media screen and (max-width: 1680px) {
 
 				.wrapper > .inner {
-					padding: 0.1em;
+								padding-top:5px;
 								max-width: 100%;
 								margin-left:0%;
 				}
@@ -1614,13 +1621,13 @@
 		}
 
 			body.is-ie .wrapper. {
-				height: 40vh;
+				height: 60vh;
 			}
 
 			@media screen and (max-width: 1280px) {
 
 				.wrapper.fullscreen {
-					min-height: calc(40vh - 2.5em);
+					min-height: calc(50vh - 2.5em);
 				}
 
 					body.is-ie .wrapper.fullscreen {
